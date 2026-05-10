@@ -29,7 +29,10 @@ export const dictionary = {
       ],
       craftTitle: 'Keahlian Artisan',
       craftText: 'Pipa rokok kami diproses melalui tangan-tangan terampil menggunakan kayu pilihan terbaik, memastikan detail yang presisi dan kualitas premium di setiap hisapannya.',
-      quote: '"Elegansi bukanlah tentang diperhatikan, melainkan tentang diingat."'
+      quote: '"Elegansi bukanlah tentang diperhatikan, melainkan tentang diingat."',
+      cta: 'Pesan Sekarang',
+      ctaTitle: 'Wujudkan maha karya anda sekarang.',
+      ctaSubtitle: 'Sudah siap memiliki mahakarya Anda?'
     },
     about: {
       title: 'Tentang Pengrajin',
@@ -90,7 +93,10 @@ export const dictionary = {
       ],
       craftTitle: 'Artisan Craftsmanship',
       craftText: 'Our smoking pipes are processed through skilled hands using the finest selected woods, ensuring precise details and premium quality in every draw.',
-      quote: '"Elegance is not about being noticed, it\'s about being remembered."'
+      quote: '"Elegance is not about being noticed, it\'s about being remembered."',
+      cta: 'Order Now',
+      ctaTitle: 'Make your masterpiece come true now.',
+      ctaSubtitle: 'Ready to own your masterpiece?'
     },
     about: {
       title: 'About the Artisan',

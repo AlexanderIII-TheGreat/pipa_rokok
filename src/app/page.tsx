@@ -100,19 +100,21 @@ export default function Home() {
                 </p>
               </FadeIn>
 
-              <FadeIn delay={0.6} direction="up" className="flex flex-row items-center space-x-6 sm:space-x-12">
+              <FadeIn delay={0.6} direction="up" className="flex flex-wrap items-center gap-4 sm:gap-8">
                 <Link 
                   href="/product" 
-                  className="px-6 sm:px-10 py-3 sm:py-4 border border-brand-gold text-brand-gold text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-gold hover:text-brand-bg transition-all duration-500 text-center whitespace-nowrap"
+                  className="px-8 py-4 border border-brand-gold text-brand-gold text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-gold hover:text-brand-bg transition-all duration-500 text-center whitespace-nowrap"
                 >
                   {t.home.explore}
                 </Link>
-                <Link 
-                  href="/about" 
-                  className="flex items-center text-brand-text/90 text-[10px] tracking-[0.2em] uppercase font-bold hover:text-brand-gold transition-colors duration-500 group whitespace-nowrap"
+                <a 
+                  href="https://wa.me/6281805932764"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-brand-gold text-brand-bg text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-text hover:text-brand-gold transition-all duration-500 text-center whitespace-nowrap shadow-[0_0_20px_rgba(196,160,82,0.2)]"
                 >
-                  {t.home.discover} <span className="ml-3 transition-transform duration-300 group-hover:translate-x-2">&rarr;</span>
-                </Link>
+                  {t.home.cta}
+                </a>
               </FadeIn>
             </div>
           </div>
@@ -271,9 +273,37 @@ export default function Home() {
               <h2 className="font-serif text-3xl md:text-5xl text-brand-text italic leading-relaxed mb-8">
                 {t.home.quote}
               </h2>
-              <div className="w-12 h-[1px] bg-brand-gold mx-auto mb-4" />
-              <span className="text-xs tracking-[0.4em] uppercase text-brand-gold">Agus Kuntadi</span>
-           </FadeIn>
+            </FadeIn>
+         </section>
+
+        {/* Final Call to Action */}
+        <section className="relative py-32 px-6 overflow-hidden bg-brand-secondary/20">
+           <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-fixed bg-center opacity-5 grayscale" />
+           <div className="max-w-4xl mx-auto text-center relative z-10">
+              <FadeIn>
+                 <span className="text-brand-gold text-xs tracking-[0.5em] uppercase font-bold mb-6 block">{t.home.ctaSubtitle}</span>
+                 <h2 className="font-serif text-4xl md:text-7xl text-brand-text uppercase leading-tight mb-12">
+                   {t.home.ctaTitle}
+                 </h2>
+                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a 
+                      href="https://wa.me/6281805932764" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group relative px-12 py-5 bg-brand-gold text-brand-bg text-[12px] tracking-[0.4em] uppercase font-bold hover:bg-brand-text transition-all duration-500 shadow-[0_0_30px_rgba(196,160,82,0.3)] overflow-hidden"
+                    >
+                      <span className="relative z-10">{t.home.cta}</span>
+                      <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity" />
+                    </a>
+                    <Link 
+                      href="/contact" 
+                      className="px-12 py-5 border border-white/10 text-brand-text/50 text-[10px] tracking-[0.3em] uppercase font-bold hover:text-brand-gold hover:border-brand-gold/50 transition-all duration-500"
+                    >
+                      {t.nav.contact}
+                    </Link>
+                 </div>
+              </FadeIn>
+           </div>
         </section>
       </main>
 

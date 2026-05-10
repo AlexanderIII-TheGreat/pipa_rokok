@@ -144,13 +144,21 @@ const ProductPage = () => {
                         <p className="text-brand-text/60 text-lg md:text-xl font-light italic max-w-lg leading-relaxed border-l border-brand-gold/20 pl-6">
                           {product.description}
                         </p>
-                        <div className="pt-6">
+                        <div className="pt-6 flex flex-wrap gap-4">
                            <button 
                             onClick={() => setSelectedProduct(product)}
-                            className="px-12 py-4 border border-brand-gold/30 text-brand-gold text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-brand-gold hover:text-brand-bg transition-all duration-500 shadow-xl"
+                            className="px-10 py-4 border border-brand-gold/30 text-brand-gold text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-brand-gold hover:text-brand-bg transition-all duration-500 shadow-xl"
                            >
                              {t.product.discover}
                            </button>
+                           <a 
+                            href="https://wa.me/6281805932764"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-10 py-4 bg-brand-gold text-brand-bg text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-brand-text transition-all duration-500 shadow-xl"
+                           >
+                             {t.home.cta}
+                           </a>
                         </div>
                       </div>
                     </FadeIn>
@@ -189,13 +197,21 @@ const ProductPage = () => {
                         <p className="text-brand-text/60 text-lg md:text-xl font-light italic max-w-lg leading-relaxed border-r border-brand-gold/20 pr-6">
                           {product.description}
                         </p>
-                        <div className="pt-6">
+                        <div className="pt-6 flex flex-wrap gap-4 justify-end">
                            <button 
                             onClick={() => setSelectedProduct(product)}
-                            className="px-12 py-4 border border-brand-gold/30 text-brand-gold text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-brand-gold hover:text-brand-bg transition-all duration-500 shadow-xl"
+                            className="px-10 py-4 border border-brand-gold/30 text-brand-gold text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-brand-gold hover:text-brand-bg transition-all duration-500 shadow-xl"
                            >
                              {t.product.discover}
                            </button>
+                           <a 
+                            href="https://wa.me/6281805932764"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-10 py-4 bg-brand-gold text-brand-bg text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-brand-text transition-all duration-500 shadow-xl"
+                           >
+                             {t.home.cta}
+                           </a>
                         </div>
                       </div>
                     </FadeIn>
