@@ -39,7 +39,7 @@ const AboutPage = () => {
              <FadeIn direction="right">
                 <div className="relative aspect-[3/4] md:aspect-square overflow-hidden rounded-sm shadow-2xl group">
                    <Image 
-                    src="/images/herosection background.png" 
+                    src="/images/hero-bg.png" 
                     alt="Agus Kuntadi Artisan" 
                     fill 
                     className="object-cover transition-all duration-1000 scale-105 group-hover:scale-100"
@@ -105,7 +105,7 @@ const AboutPage = () => {
                 <FadeIn direction="left" className="order-1 md:order-2">
                    <div className="relative aspect-video overflow-hidden shadow-2xl group">
                       <Image 
-                        src="/images/pipa rokok kayu galih asem.png" 
+                        src="/images/galih-asem.png" 
                         alt="Wood Process" 
                         fill 
                         className="object-cover transition-transform duration-1000 group-hover:scale-110"
