@@ -23,7 +23,7 @@ export default function Home() {
         if (scrollLeft + clientWidth >= scrollWidth - 10) {
           scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
-          scrollRef.current.scrollBy({ left: clientWidth / 2, behavior: 'smooth' });
+          scrollRef.current.scrollBy({ left: clientWidth * 0.8, behavior: 'smooth' });
         }
       }
     }, 3000);
@@ -34,7 +34,8 @@ export default function Home() {
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
-      const scrollTo = direction === 'left' ? scrollLeft - clientWidth / 2 : scrollLeft + clientWidth / 2;
+      const scrollAmount = clientWidth * 0.8;
+      const scrollTo = direction === 'left' ? scrollLeft - scrollAmount : scrollLeft + scrollAmount;
       scrollRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
     }
   };
@@ -181,12 +182,20 @@ export default function Home() {
             </FadeIn>
             
             {/* Navigation Arrows */}
-            <div className="flex space-x-4">
-              <button onClick={() => scroll('left')} className="w-12 h-12 rounded-full border border-brand-gold/30 flex items-center justify-center text-brand-gold active:bg-brand-gold/10 hover:bg-brand-gold hover:text-brand-bg transition-all">
-                <ChevronLeft size={20} />
+            <div className="flex space-x-4 relative z-20">
+              <button 
+                onClick={(e) => { e.preventDefault(); scroll('left'); }} 
+                className="w-14 h-14 md:w-12 md:h-12 rounded-full border border-brand-gold/30 flex items-center justify-center text-brand-gold active:bg-brand-gold/20 hover:bg-brand-gold hover:text-brand-bg transition-all"
+                aria-label="Previous"
+              >
+                <ChevronLeft size={24} />
               </button>
-              <button onClick={() => scroll('right')} className="w-12 h-12 rounded-full border border-brand-gold/30 flex items-center justify-center text-brand-gold active:bg-brand-gold/10 hover:bg-brand-gold hover:text-brand-bg transition-all">
-                <ChevronRight size={20} />
+              <button 
+                onClick={(e) => { e.preventDefault(); scroll('right'); }} 
+                className="w-14 h-14 md:w-12 md:h-12 rounded-full border border-brand-gold/30 flex items-center justify-center text-brand-gold active:bg-brand-gold/20 hover:bg-brand-gold hover:text-brand-bg transition-all"
+                aria-label="Next"
+              >
+                <ChevronRight size={24} />
               </button>
             </div>
           </div>
