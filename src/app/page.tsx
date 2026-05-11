@@ -87,9 +87,9 @@ export default function Home() {
                 <span className="text-brand-gold text-[10px] md:text-xs tracking-[0.3em] md:tracking-[0.5em] uppercase font-bold mb-4 md:mb-6 block">
                   {t.home.preTitle}
                 </span>
-                <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[6rem] leading-[1.1] mb-8 uppercase drop-shadow-2xl flex flex-col items-start">
-                  <span className="text-brand-gold">{t.home.tagline1}</span>
-                  <span className="text-brand-text">{t.home.tagline2}</span>
+                <h1 className="font-serif text-[clamp(1.75rem,8vw,6rem)] leading-[1.1] mb-8 uppercase drop-shadow-2xl flex flex-col items-start">
+                  <span className="text-brand-gold whitespace-nowrap">{t.home.tagline1}</span>
+                  <span className="text-brand-text whitespace-nowrap">{t.home.tagline2}</span>
                 </h1>
                 <div className="w-16 h-[2px] bg-brand-gold/70 mb-8" />
               </FadeIn>
