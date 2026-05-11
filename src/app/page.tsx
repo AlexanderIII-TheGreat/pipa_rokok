@@ -278,7 +278,7 @@ export default function Home() {
 
         {/* Final Call to Action */}
         <section className="relative py-32 px-6 overflow-hidden bg-brand-secondary/20">
-           <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-fixed bg-center opacity-5 grayscale" />
+           <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-fixed bg-center opacity-8 grayscale" />
            <div className="max-w-4xl mx-auto text-center relative z-10">
               <FadeIn>
                  <span className="text-brand-gold text-xs tracking-[0.5em] uppercase font-bold mb-6 block">{t.home.ctaSubtitle}</span>
