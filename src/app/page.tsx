@@ -88,8 +88,8 @@ export default function Home() {
                   {t.home.preTitle}
                 </span>
                 <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[6rem] leading-[1.1] mb-8 uppercase drop-shadow-2xl flex flex-col items-start">
-                  <span className="text-brand-gold whitespace-nowrap">{t.home.tagline1}</span>
-                  <span className="text-brand-text whitespace-nowrap">{t.home.tagline2}</span>
+                  <span className="text-brand-gold">{t.home.tagline1}</span>
+                  <span className="text-brand-text">{t.home.tagline2}</span>
                 </h1>
                 <div className="w-16 h-[2px] bg-brand-gold/70 mb-8" />
               </FadeIn>
@@ -100,10 +100,10 @@ export default function Home() {
                 </p>
               </FadeIn>
 
-              <FadeIn delay={0.6} direction="up" className="flex flex-wrap items-center gap-4 sm:gap-8">
+              <FadeIn delay={0.6} direction="up" className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-8">
                 <Link 
                   href="/product" 
-                  className="px-8 py-4 border border-brand-gold text-brand-gold text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-gold hover:text-brand-bg transition-all duration-500 text-center whitespace-nowrap"
+                  className="px-8 py-4 border border-brand-gold text-brand-gold text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-gold hover:text-brand-bg transition-all duration-500 text-center"
                 >
                   {t.home.explore}
                 </Link>
@@ -111,7 +111,7 @@ export default function Home() {
                   href="https://wa.me/6281805932764"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-brand-gold text-brand-bg text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-text hover:text-brand-gold transition-all duration-500 text-center whitespace-nowrap shadow-[0_0_20px_rgba(196,160,82,0.2)]"
+                  className="px-8 py-4 bg-brand-gold text-brand-bg text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-text hover:text-brand-gold transition-all duration-500 text-center shadow-[0_0_20px_rgba(196,160,82,0.2)]"
                 >
                   {t.home.cta}
                 </a>
@@ -278,30 +278,30 @@ export default function Home() {
 
         {/* Final Call to Action */}
         <section className="relative py-32 px-6 overflow-hidden bg-brand-secondary/20">
-           <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-fixed bg-center opacity-8 grayscale" />
+           <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-fixed bg-center opacity-16 grayscale" />
            <div className="max-w-4xl mx-auto text-center relative z-10">
               <FadeIn>
                  <span className="text-brand-gold text-xs tracking-[0.5em] uppercase font-bold mb-6 block">{t.home.ctaSubtitle}</span>
                  <h2 className="font-serif text-4xl md:text-7xl text-brand-text uppercase leading-tight mb-12">
                    {t.home.ctaTitle}
                  </h2>
-                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-6">
                     <a 
                       href="https://wa.me/6281805932764" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="group relative px-12 py-5 bg-brand-gold text-brand-bg text-[12px] tracking-[0.4em] uppercase font-bold hover:bg-brand-text transition-all duration-500 shadow-[0_0_30px_rgba(196,160,82,0.3)] overflow-hidden"
+                      className="group relative px-8 sm:px-12 py-5 bg-brand-gold text-brand-bg text-[10px] md:text-[12px] tracking-[0.3em] md:tracking-[0.4em] uppercase font-bold hover:bg-brand-text transition-all duration-500 shadow-[0_0_30px_rgba(196,160,82,0.3)] overflow-hidden text-center"
                     >
                       <span className="relative z-10">{t.home.cta}</span>
                       <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity" />
                     </a>
                     <Link 
                       href="/contact" 
-                      className="px-12 py-5 border border-white/10 text-brand-text/50 text-[10px] tracking-[0.3em] uppercase font-bold hover:text-brand-gold hover:border-brand-gold/50 transition-all duration-500"
+                      className="px-8 sm:px-12 py-5 border border-white/10 text-brand-text/50 text-[10px] tracking-[0.3em] uppercase font-bold hover:text-brand-gold hover:border-brand-gold/50 transition-all duration-500 text-center"
                     >
                       {t.nav.contact}
                     </Link>
-                 </div>
+                  </div>
               </FadeIn>
            </div>
         </section>

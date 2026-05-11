@@ -10,8 +10,8 @@ export const dictionary = {
     },
     home: {
       preTitle: 'Pipa Rokok Handcrafted Sragen',
-      tagline1: 'PIPA ROKOK KAYU',
-      tagline2: 'SENI DALAM KESEMPURNAAN.',
+      tagline1: 'MEROKOK',
+      tagline2: 'JUGA ADA SENINYA.',
       subtext: 'Koleksi pipa rokok kayu dan tulang eksklusif dari Sragen. Setiap karya dipahat manual dengan ketelitian tinggi untuk menghadirkan cita rasa pria sejati.',
       explore: 'LIHAT KOLEKSI PIPA',
       discover: 'FILOSOFI KAMI',
