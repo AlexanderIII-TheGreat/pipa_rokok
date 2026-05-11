@@ -62,7 +62,7 @@ export default function Home() {
           {/* Background Image - Optimized with Priority */}
           <Image
             src="/images/hero-bg.png"
-            alt="Agus Kuntadi Handcrafted Smoking Pipe"
+            alt="Koleksi Pipa Rokok Kayu dan Tulang Agus Kuntadi Sragen"
             fill
             className="object-cover object-center scale-105"
             priority
@@ -212,7 +212,7 @@ export default function Home() {
                   <div className="w-full h-full">
                     <Image 
                       src={item.img} 
-                      alt={item.title} 
+                      alt={`Koleksi ${item.title} - Pipa Rokok Agus Kuntadi Sragen`} 
                       fill 
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, 400px"

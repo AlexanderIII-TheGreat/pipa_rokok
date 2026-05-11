@@ -40,7 +40,7 @@ const AboutPage = () => {
                 <div className="relative aspect-[3/4] md:aspect-square overflow-hidden rounded-sm shadow-2xl group">
                    <Image 
                     src="/images/hero-bg.png" 
-                    alt="Agus Kuntadi Artisan" 
+                    alt="Agus Kuntadi - Pengrajin Pipa Rokok Sragen" 
                     fill 
                     className="object-cover transition-all duration-1000 scale-105 group-hover:scale-100"
                    />
@@ -53,7 +53,7 @@ const AboutPage = () => {
              <div className="space-y-12 relative">
                 <FadeIn delay={0.2} direction="left">
                    <h2 className="font-serif text-3xl md:text-5xl text-brand-text uppercase leading-tight">
-                      A Tradition of <br/> <span className="text-brand-gold italic">Handcrafted Perfection</span>
+                      Warisan Kerajinan <br/> <span className="text-brand-gold italic">Tangan Asli Sragen</span>
                    </h2>
                    <div className="w-20 h-[1px] bg-brand-gold/50 mt-6" />
                 </FadeIn>
@@ -91,7 +91,7 @@ const AboutPage = () => {
                          </div>
                          <div className="space-y-2">
                             <span className="block font-serif text-3xl text-brand-gold">Premium</span>
-                            <span className="text-[10px] tracking-widest uppercase text-brand-text/40 block">Walnut Wood</span>
+                            <span className="text-[10px] tracking-widest uppercase text-brand-text/40 block">Local Material</span>
                             <div className="w-8 h-[1px] bg-brand-gold/30" />
                          </div>
                          <div className="space-y-2">
@@ -106,7 +106,7 @@ const AboutPage = () => {
                    <div className="relative aspect-video overflow-hidden shadow-2xl group">
                       <Image 
                         src="/images/galih-asem.png" 
-                        alt="Wood Process" 
+                        alt="Proses Pembuatan Pipa Rokok Kayu Galih Asem Sragen" 
                         fill 
                         className="object-cover transition-transform duration-1000 group-hover:scale-110"
                       />

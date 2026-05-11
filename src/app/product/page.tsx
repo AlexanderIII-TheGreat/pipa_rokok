@@ -117,6 +117,10 @@ const ProductPage = () => {
               <span className="absolute -top-12 left-1/2 -translate-x-1/2 text-brand-gold/5 font-serif text-[12rem] select-none pointer-events-none">Gallery</span>
             </h1>
             <div className="w-24 h-[1px] bg-brand-gold mx-auto mt-8" />
+            <p className="mt-8 text-brand-text/60 text-sm md:text-base max-w-2xl mx-auto italic">
+              Koleksi eksklusif pipa rokok kayu dan tulang buatan tangan pengrajin Sragen. 
+              Kualitas premium untuk penikmat seni merokok sejati.
+            </p>
           </FadeIn>
         </div>
 
@@ -166,7 +170,7 @@ const ProductPage = () => {
                       <div className="relative aspect-square overflow-hidden group shadow-2xl">
                         <Image 
                           src={product.image} 
-                          alt={product.name} 
+                          alt={`${product.name} - Koleksi Pipa Rokok Agus Kuntadi Sragen`} 
                           fill 
                           className="object-cover transition-transform duration-1000 group-hover:scale-110"
                         />
@@ -180,7 +184,7 @@ const ProductPage = () => {
                       <div className="relative aspect-square overflow-hidden group shadow-2xl">
                         <Image 
                           src={product.image} 
-                          alt={product.name} 
+                          alt={`${product.name} - Koleksi Pipa Rokok Kayu dan Tulang Sragen`} 
                           fill 
                           className="object-cover transition-transform duration-1000 group-hover:scale-110"
                         />
