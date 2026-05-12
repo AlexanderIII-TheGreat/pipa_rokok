@@ -91,7 +91,7 @@ For inquiries and custom pipe orders:
 - **Artisan**: Agus Kuntadi
 - **Location**: Sragen, Central Java, Indonesia
 - **WhatsApp**: [+62 818-0593-2764](https://wa.me/6281805932764)
-- **Website**: [https://piparokoksragen.my.id](https://piparokoksragen.my.id) (Production URL)
+- **Website**: [piparokokaguskuntadi.com](https://piparokokaguskuntadi.com) (Production URL)
 
 ---
 
