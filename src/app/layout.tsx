@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Pipa Rokok Agus Kuntadi",
   },
   verification: {
-    google: "u1yXPiLcPWMheTipxfR1JwHWYIFSaFpGiCaJNuQZnaQ",
+    google: ["u1yXPiLcPWMheTipxfR1JwHWYIFSaFpGiCaJNuQZnaQ", "fHFWkb5yz6_BQzQYwpsBLJ7vYKOCZfrw0rw-EGkvKPM"],
   },
   alternates: {
     canonical: "https://piparokokaguskuntadi.com",
