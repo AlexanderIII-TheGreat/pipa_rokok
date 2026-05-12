@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pipa Rokok Agus Kuntadi - Premium Handcrafted Pipes
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-First, run the development server:
+A luxury, high-end web application for **Pipa Rokok Agus Kuntadi**, an artisan smoking pipe maker based in Sragen, Indonesia. This project showcases handcrafted wooden and bone pipes with a premium "Old Money" aesthetic.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+- **💎 Luxury Aesthetic**: Modern, premium design with a dark mode "Old Money" theme, gold accents, and cinematic layouts.
+- **🌍 Multi-language Support (i18n)**: Full support for Indonesian and English languages via a custom context-based system.
+- **🎬 Fluid Animations**: Smooth page transitions and element animations using `framer-motion` and custom `FadeIn` components.
+- **📱 Fully Responsive**: Optimized for all devices, from mobile phones to ultra-wide desktops.
+- **🛒 Direct WhatsApp Integration**: Seamless Call-to-Action (CTA) for direct sales and inquiries.
+- **🔍 SEO Optimized**: High-performance architecture with localized business schema and meta optimization.
+- **🎨 Artisan Focus**: Dedicated sections for craftsmanship philosophy, testimonials, and detailed product galleries.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Core**: [Next.js 16](https://nextjs.org/) (App Router), [React 19](https://reactjs.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/), [Lucide React](https://lucide.dev/) (Icons)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **State Management**: React Context API (for Language/Theme)
+- **Deployment**: Optimized for Vercel
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── app/            # Next.js App Router (Pages & Layouts)
+├── components/     # Reusable UI components (Navbar, Footer, FadeIn, etc.)
+├── context/        # Global state (LanguageContext)
+├── lib/            # Utility functions and i18n dictionary
+└── public/         # Static assets (Images, Icons)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- Node.js 18.x or later
+- npm / yarn / pnpm
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AlexanderIII-TheGreat/pipa_rokok.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Build for production:
+   ```bash
+   npm run build
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📜 Available Scripts
+
+- `npm run dev`: Starts the development server with hot-reloading.
+- `npm run build`: Compiles the application for production deployment.
+- `npm run start`: Starts the production server.
+- `npm run lint`: Runs ESLint to check for code quality issues.
+
+---
+
+## 📞 Contact & Orders
+
+For inquiries and custom pipe orders:
+
+- **Artisan**: Agus Kuntadi
+- **Location**: Sragen, Central Java, Indonesia
+- **WhatsApp**: [+62 818-0593-2764](https://wa.me/6281805932764)
+- **Website**: [piparokokaguskuntadi.com](https://piparokokaguskuntadi.com) (Production URL)
+
+---
+
+## ⚖️ License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+*Crafted with passion in Sragen. Est. 1995.*
